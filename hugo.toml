@@ -1,7 +1,7 @@
 baseURL = "https://seumas-crafts.github.io/SjjAugust.github.io/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh"
-title = "Seumas Crafts"
+title = "Seumas 的个人博客"
 theme = "risotto"
 author = "Seumas"
 copyright = "© Seumas"
@@ -19,14 +19,14 @@ noindex = false
 palette = "tokyo-night-dark"
 
 [params.about]
-title = "Seumas Crafts"
+title = "Seumas 的个人博客"
 description = "AI, software, tools, and working notes — written as reusable craft."
 logo = "◐"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
-url = "https://github.com/seumas-crafts/SjjAugust.github.io"
+url = "https://github.com/seumas-crafts"
 
 [menu]
   [[menu.main]]
