@@ -1,7 +1,6 @@
 [
   "obsidian-git",
-  "templater-obsidian",
   "obsidian-linter",
-  "longform",
-  "dataview"
+  "templater-obsidian",
+  "quickadd"
 ]
