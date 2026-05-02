@@ -1,11 +1,12 @@
-+++
-title = "Hello Hugo"
-date = "2026-05-02"
-description = "站点初始化与写作结构说明"
-tags = ["hugo", "blog"]
-categories = ["site"]
-draft = false
-+++
+---
+title: "Hello Hugo"
+date: 2026-05-02
+description: "站点初始化与写作结构说明"
+tags: ["hugo", "blog"]
+categories: ["site"]
+draft: false
+toc: true
+---
 
 这是这个博客的第一篇示例文章，也作为后续写作结构的占位。
 
