@@ -8,7 +8,6 @@ copyright = "© Seumas"
 enableInlineShortcodes = true
 enableRobotsTXT = true
 hasCJKLanguage = true
-sectionPagesMenu = "main"
 
 [pagination]
 pagerSize = 10

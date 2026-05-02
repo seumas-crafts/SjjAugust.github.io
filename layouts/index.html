@@ -1,0 +1,21 @@
+{{ define "main" }}
+    {{ .Content }}
+
+    {{ $posts := first 5 (where .Site.RegularPages "Section" "post") }}
+    {{ if $posts }}
+    <h2>Latest Posts</h2>
+    <ul>
+        {{ range $posts }}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+            {{ with .Date }}<span> — {{ .Format "2006-01-02" }}</span>{{ end }}
+            {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+        </li>
+        {{ end }}
+    </ul>
+    {{ end }}
+{{ end }}
+
+{{ define "aside" }}
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+{{ end }}
