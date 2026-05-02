@@ -1,6 +1,5 @@
 +++
 title = "Posts"
-description = "All posts"
+description = "Essays, notes, and implementation logs"
 tags = ["index"]
 +++
-

@@ -1,0 +1,24 @@
+:root {
+  --pagefind-ui-primary: var(--base0D);
+}
+
+.content__body {
+  line-height: 1.75;
+}
+
+.content__body h2,
+.content__body h3 {
+  margin-top: 2rem;
+}
+
+.content__body code {
+  border-radius: 0.25rem;
+}
+
+.aside__about {
+  margin-bottom: 1.25rem;
+}
+
+.about__description {
+  max-width: 18rem;
+}

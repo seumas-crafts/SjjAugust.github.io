@@ -1,7 +1,7 @@
 baseURL = "https://seumas-crafts.github.io/SjjAugust.github.io/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh"
-title = "Seumas Blog"
+title = "Seumas Crafts"
 theme = "risotto"
 author = "Seumas"
 copyright = "© Seumas"
@@ -17,22 +17,17 @@ pagerSize = 10
 noindex = false
 
 [params.theme]
-palette = "base16-dark"
+palette = "tokyo-night-dark"
 
 [params.about]
-title = "Seumas Blog"
-description = "Notes, essays, and working thoughts."
-logo = "✦"
+title = "Seumas Crafts"
+description = "AI, software, tools, and working notes — written as reusable craft."
+logo = "◐"
 
 [[params.socialLinks]]
 icon = "fa-brands fa-github"
 title = "GitHub"
 url = "https://github.com/seumas-crafts/SjjAugust.github.io"
-
-[[params.socialLinks]]
-icon = "fa-solid fa-envelope"
-title = "Email"
-url = "mailto:hello@example.com"
 
 [menu]
   [[menu.main]]
@@ -40,6 +35,11 @@ url = "mailto:hello@example.com"
     name = "About"
     url = "/about/"
     weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/post/"
+    weight = 20
 
 [taxonomies]
 category = "categories"
