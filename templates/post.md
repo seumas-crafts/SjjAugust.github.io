@@ -1,13 +1,13 @@
-+++
-title = "<% tp.file.title %>"
-date = "<% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>"
-description = ""
-tags = []
-categories = []
-series = []
-draft = true
-toc = true
-+++
+---
+title: "<% tp.file.title %>"
+date: <% tp.date.now("YYYY-MM-DDTHH:mm:ssZ") %>
+description: ""
+tags: []
+categories: []
+series: []
+draft: true
+toc: true
+---
 
 # <% tp.file.title %>
 
