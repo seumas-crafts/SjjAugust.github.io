@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "templates/post.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "post"
+            }
+          },
+          {
+            "id": "3ae6fda1ab73c74e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README 的反向链接列表"
+              "title": "index 的反向链接列表"
             }
           },
           {
@@ -113,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README 的出链列表"
+              "title": "index 的出链列表"
             }
           },
           {
@@ -156,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "index 的大纲"
             }
           }
         ]
@@ -180,9 +195,28 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
+      "quickadd:QuickAdd": false
     }
   },
-  "active": "e9e8939193e9eb40",
-  "lastOpenFiles": []
+  "active": "3ae6fda1ab73c74e",
+  "lastOpenFiles": [
+    "content/post/sre-harness-agent-架构-能力与演进/Pasted image 20260502233454.png",
+    "content/post/sre-harness-agent-架构-能力与演进/Pasted image 20260502212712.png",
+    "templates/post.md",
+    "content/post/sre-harness-agent-架构-能力与演进/index.md",
+    "content/post/sre-harness-agent-架构-能力与演进",
+    "content/post/sre-harness-agent/index.md",
+    "content/post/SRE Harness Agent - 架构、能力与演进.md",
+    "templates/post-bundle.md",
+    "content/post/sre-harness-agent",
+    "content/post/hello-hugo/index.md",
+    "content/post/hello-hugo",
+    "content/post/page-bundle-example",
+    "content/post/未命名.md",
+    "README.md",
+    "templates"
+  ]
 }
