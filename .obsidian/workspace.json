@@ -203,6 +203,9 @@
   },
   "active": "3ae6fda1ab73c74e",
   "lastOpenFiles": [
+    "log/app.log",
+    "log/app.call.log",
+    "log",
     "content/post/sre-harness-agent-架构-能力与演进/Pasted image 20260502233454.png",
     "content/post/sre-harness-agent-架构-能力与演进/Pasted image 20260502212712.png",
     "templates/post.md",
