@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
+                "file": "templates/post-bundle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "post-bundle"
             }
           }
         ],
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
+                "file": "templates/post-bundle.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "index 的反向链接列表"
+              "title": "post-bundle 的反向链接列表"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
+                "file": "templates/post-bundle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "index 的出链列表"
+              "title": "post-bundle 的出链列表"
             }
           },
           {
@@ -171,13 +171,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/post/sre-harness-agent-架构-能力与演进/index.md",
+                "file": "templates/post-bundle.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "index 的大纲"
+              "title": "post-bundle 的大纲"
             }
           }
         ]
@@ -203,13 +203,14 @@
   },
   "active": "3ae6fda1ab73c74e",
   "lastOpenFiles": [
+    "dept_users.json",
+    "content/post/sre-harness-agent-架构-能力与演进/index.md",
     "log/app.log",
     "log/app.call.log",
     "log",
     "content/post/sre-harness-agent-架构-能力与演进/Pasted image 20260502233454.png",
     "content/post/sre-harness-agent-架构-能力与演进/Pasted image 20260502212712.png",
     "templates/post.md",
-    "content/post/sre-harness-agent-架构-能力与演进/index.md",
     "content/post/sre-harness-agent-架构-能力与演进",
     "content/post/sre-harness-agent/index.md",
     "content/post/SRE Harness Agent - 架构、能力与演进.md",

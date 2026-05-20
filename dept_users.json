@@ -1,0 +1,30 @@
+{
+  "code": 99991679,
+  "error": {
+    "log_id": "202605191718362BBEE98A5CD804D53EAE",
+    "permission_violations": [
+      {
+        "subject": "contact:contact.base:readonly",
+        "type": "action_privilege_required"
+      },
+      {
+        "subject": "contact:department.organize:readonly",
+        "type": "action_privilege_required"
+      },
+      {
+        "subject": "contact:contact:access_as_app",
+        "type": "action_privilege_required"
+      },
+      {
+        "subject": "contact:contact:readonly",
+        "type": "action_privilege_required"
+      },
+      {
+        "subject": "contact:contact:readonly_as_app",
+        "type": "action_privilege_required"
+      }
+    ],
+    "troubleshooter": "排查建议查看(Troubleshooting suggestions): https://open.feishu.cn/search?from=openapi\u0026log_id=202605191718362BBEE98A5CD804D53EAE\u0026code=99991679\u0026method_id=7029602987262263298"
+  },
+  "msg": "Unauthorized. You do not have permission to perform the requested operation on the resource. Please request user re-authorization and try again. required one of these privileges under the user identity: [contact:contact.base:readonly, contact:department.organize:readonly, contact:contact:access_as_app, contact:contact:readonly, contact:contact:readonly_as_app].应用未获取所需的用户授权：[contact:contact.base:readonly, contact:department.organize:readonly, contact:contact:access_as_app, contact:contact:readonly, contact:contact:readonly_as_app]，点击链接查看解决方案：https://open.feishu.cn/document/uAjLw4CM/ugTN1YjL4UTN24CO1UjN/trouble-shooting/how-to-resolve-error-99991679"
+}
