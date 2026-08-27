@@ -1,0 +1,30 @@
+{{ define "main" }}
+<header class="list-header">
+    <h1>{{ .Title | markdownify }}</h1>
+    {{ with .Content }}<div class="list-description">{{ . }}</div>{{ end }}
+</header>
+
+<section class="post-list">
+    {{ range .Paginator.Pages }}
+    <article class="post-preview">
+        <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+        <p class="post-meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+        </p>
+        <p class="post-summary">
+            {{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 280 }}{{ end }}
+        </p>
+        <a class="read-more" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">[continue reading →]</a>
+    </article>
+    {{ end }}
+</section>
+
+{{ if gt .Paginator.TotalPages 1 }}
+<nav class="pagination" aria-label="Pagination">
+    {{ with .Paginator.Prev }}<a href="{{ .URL }}">← newer</a>{{ end }}
+    <span>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
+    {{ with .Paginator.Next }}<a href="{{ .URL }}">older →</a>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "post-bundle"
             }
+          },
+          {
+            "id": "91e4bc9312007397",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.0"
+              },
+              "icon": "lucide-book-up",
+              "title": "版本说明 1.13.0"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -56,7 +68,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -201,7 +215,7 @@
       "quickadd:QuickAdd": false
     }
   },
-  "active": "3ae6fda1ab73c74e",
+  "active": "91e4bc9312007397",
   "lastOpenFiles": [
     "dept_users.json",
     "content/post/sre-harness-agent-架构-能力与演进/index.md",

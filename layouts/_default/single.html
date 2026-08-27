@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="article-single">
+    <header class="article-header">
+        <h1>{{ .Title | markdownify }}</h1>
+        {{ if or .Date .Params.author }}
+        <p class="post-meta">
+            {{ with .Params.author }}<span>by {{ . }}</span>{{ end }}
+            {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time>{{ end }}
+            {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+        </p>
+        {{ end }}
+        {{ with .Params.description }}<p class="article-deck">{{ . }}</p>{{ end }}
+    </header>
+
+    <div class="content__body">
+        {{ .Content }}
+    </div>
+
+    <footer class="article-footer">
+        <a href="{{ "post/" | relURL }}">← back to all posts</a>
+    </footer>
+</article>
+{{ end }}

@@ -1,21 +1,26 @@
 {{ define "main" }}
-    {{ .Content }}
+    <section class="home-intro">
+        {{ .Content }}
+    </section>
 
-    {{ $posts := first 5 (where .Site.RegularPages "Section" "post") }}
+    {{ $posts := first 8 (where .Site.RegularPages "Section" "post") }}
     {{ if $posts }}
-    <h2>Latest Posts</h2>
-    <ul>
+    <section class="post-list" aria-labelledby="latest-posts">
+        <h2 id="latest-posts" class="section-title">Latest posts</h2>
         {{ range $posts }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
-            {{ with .Date }}<span> — {{ .Format "2006-01-02" }}</span>{{ end }}
-            {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
-        </li>
+        <article class="post-preview">
+            <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
+            <p class="post-meta">
+                <span>{{ .Date.Format "2006-01-02" }}</span>
+                {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+            </p>
+            <p class="post-summary">
+                {{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 280 }}{{ end }}
+            </p>
+            <a class="read-more" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">[continue reading →]</a>
+        </article>
         {{ end }}
-    </ul>
+        <a class="all-posts" href="{{ "post/" | relURL }}">All posts →</a>
+    </section>
     {{ end }}
-{{ end }}
-
-{{ define "aside" }}
-    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
 {{ end }}
