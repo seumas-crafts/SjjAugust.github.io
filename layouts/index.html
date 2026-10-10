@@ -6,21 +6,21 @@
     {{ $posts := first 8 (where .Site.RegularPages "Section" "post") }}
     {{ if $posts }}
     <section class="post-list" aria-labelledby="latest-posts">
-        <h2 id="latest-posts" class="section-title">Latest posts</h2>
+        <h2 id="latest-posts" class="section-title">最新文章</h2>
         {{ range $posts }}
         <article class="post-preview">
             <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
             <p class="post-meta">
                 <span>{{ .Date.Format "2006-01-02" }}</span>
-                {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+                {{ with .ReadingTime }}<span>预计阅读 {{ . }} 分钟</span>{{ end }}
             </p>
             <p class="post-summary">
                 {{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 280 }}{{ end }}
             </p>
-            <a class="read-more" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">[continue reading →]</a>
+            <a class="read-more" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">[继续阅读 →]</a>
         </article>
         {{ end }}
-        <a class="all-posts" href="{{ "post/" | relURL }}">All posts →</a>
+        <a class="all-posts" href="{{ "post/" | relURL }}">全部文章 →</a>
     </section>
     {{ end }}
 {{ end }}

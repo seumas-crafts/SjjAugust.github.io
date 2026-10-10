@@ -10,21 +10,21 @@
         <h2><a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a></h2>
         <p class="post-meta">
             <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+            {{ with .ReadingTime }}<span>预计阅读 {{ . }} 分钟</span>{{ end }}
         </p>
         <p class="post-summary">
             {{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | htmlUnescape | truncate 280 }}{{ end }}
         </p>
-        <a class="read-more" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">[continue reading →]</a>
+        <a class="read-more" href="{{ .RelPermalink }}" aria-label="阅读全文：{{ .Title }}">[继续阅读 →]</a>
     </article>
     {{ end }}
 </section>
 
 {{ if gt .Paginator.TotalPages 1 }}
-<nav class="pagination" aria-label="Pagination">
-    {{ with .Paginator.Prev }}<a href="{{ .URL }}">← newer</a>{{ end }}
+<nav class="pagination" aria-label="分页导航">
+    {{ with .Paginator.Prev }}<a href="{{ .URL }}">← 较新</a>{{ end }}
     <span>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
-    {{ with .Paginator.Next }}<a href="{{ .URL }}">older →</a>{{ end }}
+    {{ with .Paginator.Next }}<a href="{{ .URL }}">较早 →</a>{{ end }}
 </nav>
 {{ end }}
 {{ end }}

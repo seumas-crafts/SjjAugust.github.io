@@ -4,9 +4,9 @@
         <h1>{{ .Title | markdownify }}</h1>
         {{ if or .Date .Params.author }}
         <p class="post-meta">
-            {{ with .Params.author }}<span>by {{ . }}</span>{{ end }}
+            {{ with .Params.author }}<span>作者：{{ . }}</span>{{ end }}
             {{ with .Date }}<time datetime="{{ .Format "2006-01-02" }}">{{ .Format "2006-01-02" }}</time>{{ end }}
-            {{ with .ReadingTime }}<span>{{ . }} min read</span>{{ end }}
+            {{ with .ReadingTime }}<span>预计阅读 {{ . }} 分钟</span>{{ end }}
         </p>
         {{ end }}
         {{ with .Params.description }}<p class="article-deck">{{ . }}</p>{{ end }}
@@ -17,7 +17,7 @@
     </div>
 
     <footer class="article-footer">
-        <a href="{{ "post/" | relURL }}">← back to all posts</a>
+        <a href="{{ "post/" | relURL }}">← 返回全部文章</a>
     </footer>
 </article>
 {{ end }}

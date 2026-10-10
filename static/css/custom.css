@@ -6,7 +6,9 @@
   --rule: #d8d5cd;
   --link: #59564f;
   --link-hover: #000;
+  --highlight: #eee3ad;
   --serif: Palatino, "Palatino Linotype", "Book Antiqua", "Songti SC", "Noto Serif SC", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   --mono: "Inconsolata", "SFMono-Regular", Consolas, "Liberation Mono", "PingFang SC", "Microsoft YaHei", monospace;
 
   /* Keep the inherited Risotto styles aligned with the new palette. */
@@ -33,7 +35,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 1rem;
   line-height: 1.55;
   text-rendering: optimizeLegibility;
@@ -77,10 +79,13 @@ a.active {
   display: flex;
   align-items: baseline;
   gap: 1.75rem;
+  min-width: 0;
 }
 
 .site-title {
+  display: inline-block;
   flex: 0 0 auto;
+  max-width: 100%;
   color: var(--ink) !important;
   font-family: var(--serif);
   font-size: clamp(2.45rem, 8vw, 3.35rem);
@@ -104,6 +109,7 @@ a.active {
 
 .site-nav li {
   display: block;
+  font-family: var(--mono);
   font-size: 0.82rem;
   list-style: none;
 }
@@ -122,6 +128,7 @@ a.active {
 
 .page__body {
   display: block;
+  min-width: 0;
   margin: 2.25rem 0 3.5rem;
   background: transparent;
   box-shadow: none;
@@ -217,6 +224,7 @@ a.active {
   margin: 0 0 0.9rem;
   color: var(--muted);
   font-size: 0.8rem;
+  font-family: var(--mono);
 }
 
 .post-meta > * + *::before {
@@ -233,6 +241,7 @@ a.active {
 
 .read-more,
 .all-posts {
+  font-family: var(--mono);
   font-size: 0.84rem;
   font-style: italic;
 }
@@ -421,6 +430,7 @@ pre code {
   color: var(--muted);
   font-size: 0.78rem;
   text-align: center;
+  font-family: var(--mono);
 }
 
 .page__footer p {
@@ -449,8 +459,19 @@ pre code {
     display: block;
   }
 
+  .site-title {
+    font-size: clamp(2rem, 10vw, 2.45rem);
+    letter-spacing: -0.04em;
+  }
+
   .site-nav ul {
     margin-top: 0.8rem;
+  }
+
+  .site-nav ul a {
+    display: inline-flex;
+    min-height: 44px;
+    align-items: center;
   }
 
   .page__body {

@@ -15,12 +15,9 @@ pagerSize = 10
 [params]
 noindex = false
 
-[params.theme]
-palette = "tokyo-night-dark"
-
 [params.about]
 title = "Seumas Notes"
-description = "AI, software, tools, and working notes — written as reusable craft."
+description = "关于 AI、软件工程、工具与可复用实践的长期笔记。"
 logo = "◐"
 
 [[params.socialLinks]]
@@ -31,12 +28,12 @@ url = "https://github.com/seumas-crafts"
 [menu]
   [[menu.main]]
     identifier = "about"
-    name = "About"
+    name = "关于"
     url = "/about/"
     weight = 10
   [[menu.main]]
     identifier = "posts"
-    name = "Posts"
+    name = "文章"
     url = "/post/"
     weight = 20
 

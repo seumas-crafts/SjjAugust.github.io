@@ -1,11 +1,11 @@
 +++
 title = "Home"
-description = "AI, software, tools, and working notes"
+description = "关于 AI、软件工程、工具与可复用实践的长期笔记"
 +++
 
-## Working notes for reusable craft
+## 把实践写成可复用的经验
 
 这里记录 AI、软件工程、工具链和实际项目里的思考。内容尽量保持可复用：明确问题、交代约束、记录路径、给出结论。
 
-如果你是第一次来，可以先看最近文章，或者从 About 了解这个站点的定位。
+如果你是第一次访问，可以先看最近文章，或者从「关于」了解这个站点的定位。
 
